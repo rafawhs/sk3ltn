@@ -1,0 +1,96 @@
+// CSS
+
+.source.css {
+    color: @orange-light;
+
+
+    // TAGS
+    .tag {
+        color: @orange-light;
+        text-decoration: none;
+    }
+
+
+    // ATTRIBUTES
+    .attribute-name,
+    .attribute-name.id {
+        color: @green;
+
+        &.pseudo-class {
+            font-style: italic;
+            color: darken(@green, 15%);
+        }
+    }
+
+
+    // PROPERTY LIST
+    .property-list {
+        color: @yellow-light;
+
+        .punctuation {
+            &.begin,
+            &.end {
+                color: @orange-light;
+            }
+        }
+
+        .function {
+            color: lighten(@pink, 20%);
+        }
+
+        .property-value {
+            color: @cyan;
+
+            .punctuation {
+                &.separator,
+                &.terminator {
+                    color: @orange;
+                }
+            }
+            .function {
+                color: @purple;
+            }
+        }//.property-value
+
+        .entity {
+            &.reference {
+                color: @orange;
+            }
+        }
+    }//.property-list
+
+
+    // @ RULES
+    .at-rule {
+        color: @blue;
+
+        .punctuation {
+            &.definition {
+                color: @blue;
+            }
+        }
+    }
+
+
+    // OTHER
+    .constant {
+        &.numeric {
+            color: @cyan;
+        }
+        &.definition {
+            color: darken(@cyan, 20%);
+        }
+    }
+
+    .keyword {
+        &.unit {
+            color: darken(@cyan, 20%);
+        }
+    }
+
+    .set.variable {
+        .variable {
+
+        }
+    }
+}

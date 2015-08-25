@@ -1,0 +1,75 @@
+// PHP
+.source.php {
+    color: darken(@red, 10%);
+
+    .keyword {
+        &.control,
+        &.new {
+            color:  lighten(@green, 10%);
+        }
+        &.operator.key {
+            color: white;
+        }
+        &.operator.string {
+            color: @green;
+        }
+    }
+
+    .constant {
+        color: @red;
+        font-style: italic;
+    }
+
+    .support {
+        &.basic_functions {
+            color: @orange-light;
+        }
+    }
+
+    .meta {
+        .function {
+            .storage {
+                &.type.function {
+                    color: @blue;
+                }
+            }
+
+            .entity {
+                &.name.function {
+                    color: white;
+                }
+            }
+        }
+
+        &.function-call {
+            color: @very-light-gray;
+        }
+
+        &.array {
+            .function {
+                color: lighten(@green, 10%);
+            }
+            .punctuation{
+                color: darken(@red, 10%);
+            }
+        }
+    }
+
+    .variable {
+        color: @cyan;
+        font-style: italic;
+    }
+
+    .quoted.php {
+        .punctuation.string,
+        .string-contents {
+            color: lighten(@red, 15%);
+        }
+    }
+
+    .punctuation {
+        &.terminator {
+            color: white;
+        }
+    }
+}

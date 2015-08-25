@@ -1,0 +1,15 @@
+{
+  "name": "sk3ltn-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Use this colorful syntax theme with your eyes closed.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/sk3ltn-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

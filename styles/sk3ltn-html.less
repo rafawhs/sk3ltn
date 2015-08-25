@@ -1,0 +1,48 @@
+// HTML
+.text.html {
+    color: white;
+
+    .tag {
+
+        &.any {
+            color: darken(@yellow-light, 20%);
+        }
+
+        &.punctuation {
+            color: darken(@yellow, 20%);
+        }
+
+        .attribute-name {
+            color: darken(@yellow-light, 20%);
+
+            &.id {
+                color: @green;
+            }
+        }
+
+        .string.html {
+            &.quoted {
+                color: @blue;
+
+                .punctuation {
+                    color: darken(@blue, 15%);
+                }
+                .embedded.php {
+                    .punctuation {
+                        color: darken(@red, 10%);
+                        &.terminator.expression {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }//.tag
+
+    .entity {
+        &.name.tag {
+            text-decoration: none;
+        }
+    }
+
+}//.text.html
