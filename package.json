@@ -5,7 +5,10 @@
   "description": "Use this colorful syntax theme with your eyes closed.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "sass",
+    "php",
+    "html"
   ],
   "repository": "https://github.com/rafawhs/sk3ltn",
   "license": "MIT",
